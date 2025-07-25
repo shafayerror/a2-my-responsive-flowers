@@ -3,7 +3,7 @@
 
 /* noto-serif */
 
-.noto-serif-font-01 {
+.noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -12,9 +12,132 @@
 }
 
 /* inter */
-.inter-font-02 {
+.inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+/* shared style */
+
+.display-flex {
+  display: flex;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.title-color {
+  color: rgba(233, 90, 8, 1);
+}
+.btn-primary {
+  background-color: rgba(233, 90, 8, 1);
+  border: none;
+  height: 50px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.titlle {
+  font-size: 3.12rem;
+  font-weight: 700;
+}
+
+/* header style */
+header {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* nav style */
+
+.Navbar {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 48px;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+#home {
+  color: rgba(37, 36, 50, 1);
+  font-weight: 600;
+}
+.S-A-color {
+  color: rgba(137, 135, 161, 1);
+}
+
+/* Banner style */
+.banner {
+  margin-top: 120px;
+  justify-content: space-between;
+}
+
+.banner-img {
+  max-width: 100%;
+}
+
+.banner-tittle {
+  font-size: 4rem;
+  font-weight: 700;
+}
+/* main */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* plant portion */
+.our-plant {
+  margin-top: 120px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plant-info {
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+}
+.card-tittle {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.card-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card-info {
+  text-align: center;
+}
+#btn-width {
+  width: 100%;
+}
+
+/* --------media query for small device------- */
+
+@media screen and (max-width: 576px) {
+  .responsiveness {
+    display: none;
+  }
+  .banner {
+    flex-flow: column-reverse;
+    width: 100%;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
